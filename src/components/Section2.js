@@ -6,7 +6,7 @@ class Section2 extends React.Component {
       return (
         <div className="chatbotIntro">
             <img src="robo1.gif" style={{margin:'1%'}}  width="500" height="400" alt=""/>
-            <h3>Are you bored? Talk with me... I'm so jobless...</h3>
+            <h3>Are you bored? Talk with me...</h3>
             <h4>Hi! I am chatbot Convo! Talk with me .. I can improve your English skills. Convo is an AI chatbot that can 
 	        chat and speak with you.</h4>
           <Link to='/scenarios'>
