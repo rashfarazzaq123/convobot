@@ -10,6 +10,7 @@ class Chatbot1 extends React.Component{
         <Header/>
         <div className="scenarioIntro">
           Scenario:It's your turn to make an order at the coffee shop.Try asking about the menu!
+    
         </div>
         <Message1/>
         <Footer/>

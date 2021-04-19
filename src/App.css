@@ -23,18 +23,18 @@ ul{
   padding-bottom:2%;
   padding-left:5%;
   padding-right: 5%;
-  background-color: #126ea3;
+  background-color: #0d92df;
 }
 li{
   display:inline;
   padding:1%;
   margin:5%;
   font-size:24px;
-  color: azure;
+  color: rgb(255, 255, 255);
 }
 
 li:hover{
-  background-image: linear-gradient(to bottom right,  #0c50ce, #5f10a8);
+  background-image: linear-gradient(to bottom right,  #e5eaf1, #1967af);
   color: aliceblue;
   text-decoration:none;
   border-radius:8%;
