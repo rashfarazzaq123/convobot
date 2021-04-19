@@ -34,7 +34,7 @@ li{
 }
 
 li:hover{
-  background-image: linear-gradient(to bottom right,  #e5eaf1, #1967af);
+  background-image: linear-gradient(to bottom right,  #1970eb, #07325a);
   color: aliceblue;
   text-decoration:none;
   border-radius:8%;
