@@ -119,7 +119,18 @@ export default function Game1() {
   
 	return (
 		<div>
-			<div className="game1intro">Fill in the blanks with the most appropriate form of the verbs.</div>
+			<div className="game1intro" style={{color:"#1891c4",padding:"20px",fontSize:"60px",fontFamily:"Arial, Helvetica, sans-serif"}}>
+				Hello! Welcome to convo grammer game  </div>
+				<img src="hello.png" width="1200px" height="370px" float="center"  style={{position:"absolute",top:"86%",left:"6%"}}/>
+	<div className="box" style={{backgroundColor:"#1891c4"}}>
+	<div className="introduction" >
+		<h1 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"35px",position:"absolute",top:"145%",left:"6%"}}>how to play?</h1>
+		<h2 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"166%",left:"6%"}}>Here are some 10 grammer questions for you.first five Question are made with simple grammer and last<br></br> five questions are here with advance grammer  </h2>
+		<h3 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"176%",left:"6%"}}>if you click the correct answer the box will be green  .if you select the wrong anwer it will be red colour</h3>	
+		<h4 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"184%",left:"6%"}}>finaly game will show you the marks you got from here </h4>	
+        <h5 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"192%",left:"6%"}}>Enjoy the game</h5>
+		</div>
+		</div>
 			<div className='game1content'>
 				
 				{showScore ? (

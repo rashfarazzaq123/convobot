@@ -148,32 +148,37 @@ li:hover{
 }
 .scenarioIntro{
   padding: 5%;
-  background-color: #20b9ce;
+  background-color: #22b1f3;
   padding: 2%;
   border-radius:5% ;
   margin: 2%;
+  color:white;
 }
 .Scenario{
   padding: 2%;
   margin-right: 20%;
   margin-left: 20%;
   margin-bottom: 2%;
-  border: #083a97 2px solid;
+  
   background-position: center;
-  background-size: cover;  
+  background-size: cover;
+  box-shadow: 3px 3px 3px 3px #a9b0c9;  
+  
 }
 .scenarioName{
-  background-color:rgb(250,250,250);
+  background-color:rgba(250, 250, 250, 0.418);
   padding: 2%;
   border-radius: 20%;
+  color:rgb(48, 118, 248);
 }
 .scenarioName:hover{
   background-image: linear-gradient(to bottom right,  #0c50ce, #5f10a8);
   color: aliceblue;
   text-decoration:none;
 }
+
 .allGames{
-  display: grid;
+  
   padding: 2%;
   margin:2%;  
 }
@@ -195,43 +200,48 @@ li:hover{
   margin-right: 25%;
 }
 .game1{
-  border: #083a97 4px solid;
+  
   grid-row: 1/span 1;
   margin: 1%;
+  border-color: #92a2ac;
+  box-shadow: 3px 2px 2px 2px #888888;
 }
 .game2{
-  border: #083a97 4px solid;
+  
   grid-row: 1/span 1;
   margin: 1%;
+  box-shadow: 3px 2px 2px 2px #888888;
 }
 .game3{
-  border: #083a97 4px solid;
+ 
   grid-row: 1/span 1;
   margin: 1%;
+  box-shadow: 3px 2px 2px 2px #888888;
 }
 .game1intro{
   margin-top: 4%;
-  margin-left: 25%;
-  margin-right: 25%;
-  background-color: #1a8f97;
+  width :"600px";
+  background-color: #ffffff;
   padding: 2%;
   border-radius:5% ;
 }
 .game1content {
   background-color: #58b9f1;
-  width: 750px;
-  min-height: 300px;
-  height: min-content;
+  width: 800px;
+  min-height: 500px;
+  height: 500px;
   border-radius: 15px;
   padding: 20px;
+  position: absolute;
+  top: 220%;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   min-height: 50vh;
   margin: 2%;
+  left:20%;
   margin-bottom: 5%;
-  margin-left: 25%;
 }
 .game2content {
   background-color: #58b9f1;

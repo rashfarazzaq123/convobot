@@ -8,7 +8,7 @@ class Scenarios extends React.Component{
       return(
       <div className="Scenarios">
         <Header/>
-        <div className="scenarioIntro">Convo is a a scenario based chatbot which helps you to learn English to face different day to day real life scenarios with CONFIDENCE!
+        <div className="scenarioIntro">Convo is  a scenario based chatbot which helps you to learn English to face different day to day real life scenarios with CONFIDENCE!
 	        Please select a scenario given below to try out. Learn and Enjoy!!!
 	      </div>
         <div className="Scenario" style={{backgroundImage:'url(/cafe.jpg)'}}>

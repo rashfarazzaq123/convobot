@@ -6,7 +6,7 @@ import Game1content from './Game1content';
 class Game1 extends React.Component{
     render(){
       return(
-      <div className="Game1">
+      <div className="Game1" >
         <Header/>
         <div><Game1content/></div>
         <Footer/>

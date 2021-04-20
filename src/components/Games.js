@@ -8,26 +8,31 @@ class Games extends React.Component{
       return(
       <div className="Games">
         <Header/>
-        <h2>Try out our learning games!</h2>
+        <h2 style={{color:"#1aa2bd",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"49px"}}>
+        Try out our learning games!</h2>
         <div className="allGames">
-        <div className='game1'>
+        <div className='game1'  style={{position:"absolute" ,width:"600px",height:"390px",top:"100%"}}  >
             <Link to='/game1'>
-                <img src="speak.jpg" width="400" height="300" style={{padding:'2%'}}/>
-                <p className="gameName">IMPROVE YOUR GRAMMAR</p>
+                <img src="speak.jpg" width="590" height="300"/>
+                <p className="gameName">play</p>
             </Link>
         </div>
-        <div className='game2'>
+        <p className="gameName1"style={{position:"absolute", top:"130%",left:"55%",color:"#94adb3",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px"}}>You can improve your grammer skills from here.<br></br> try this out by clicking play button</p>
+        <div className='game2' style={{position:"absolute", top:"175%",width:"600px",heigth:"400px"}}>
         <Link to='/game2'>    
-            <img src="vocab.jpg"  width="400" height="300" style={{padding:'2%'}}/>
-            <p className="gameName">IMPROVE YOUR VOCABULARY</p>
+            <img src="vocab.jpg"  width="590" height="300"/>
+            <p className="gameName">play</p>
         </Link>
         </div>
-        <div className='game3'>
+        <p className="gameName1"style={{position:"absolute", top:"200%",left:"55%",color:"#94adb3",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px"}}>You can improve your vocabulary skills from here.<br></br> try this out by clicking play button</p>
+        <div className='game3'style={{position:"absolute", top:"254%",width:"600px",height:"390px"}}>
         <Link to='/game3'>   
-            <img src="grammar.jpg" width="400" height="300" style={{padding:'2%'}}/>
-            <p className="gameName">WORD GAME</p>
+            <img src="grammar.jpg" width="590" height="300" />
+            <p className="gameName">play</p>
         </Link>
         </div>
+        <p className="gameName1"style={{position:"absolute", top:"290%",left:"55%",color:"#94adb3",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px"}}>You can improve your vocabulary skills from here.<br></br> try this out by clicking play button</p>
+
         </div>
         <Footer/>
       </div>
