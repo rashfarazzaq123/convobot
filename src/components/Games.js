@@ -19,7 +19,7 @@ class Games extends React.Component{
         <div className='game2'>
         <Link to='/game2'>    
             <img src="vocab.jpg"  width="400" height="300" style={{padding:'2%'}}/>
-            <p className="gameName">CROSSWORDS</p>
+            <p className="gameName">IMPROVE YOUR VOCABULARY</p>
         </Link>
         </div>
         <div className='game3'>

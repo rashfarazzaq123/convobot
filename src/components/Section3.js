@@ -6,7 +6,7 @@ class Section3 extends React.Component {
     render() {
       return (
         <div className="gameIntro">
-           <img src="hello.png" width="100%" height="370px" float="center"  style={{position:"relative",top:"220%"}}/>
+           <img src="hello.png" width="1200px" height="370px" float="center"  style={{position:"absolute",top:"220%",left:"6%"}}/>
           
             <div>
             <h3 style={{float:"right",position:"absolute",top:"265%" ,left:"38%",fontSize:"40px",color:"#2eaed9"}} >

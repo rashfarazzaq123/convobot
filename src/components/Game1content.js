@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Game1() {
+	
 	const questions = [
 		{
 			questionText: 'I ..... tennis every Sunday morning.',
@@ -96,13 +97,21 @@ export default function Game1() {
 	const [showScore, setShowScore] = useState(false);
 	const[score,setscore]=useState(0);
   	const[currentQuestion, setCurrentQuestion]=useState(0);
+	const[bgColor,setbgColor]=useState(0);
   	const handleAnswerButtonClick = (isCorrect) => {
 		if(isCorrect==true){
-  			setscore(score+1);
+			setscore(score+1);
+			setbgColor("#2f922f");
+		}
+		else{
+			setbgColor("#ff3333");
 		}
     	const nextQuestion = currentQuestion + 1;
     	if (nextQuestion < questions.length) {
-      		setCurrentQuestion(nextQuestion);
+			setTimeout(function(){
+				setCurrentQuestion(nextQuestion);
+				setbgColor("#eceef7");
+			},1000);
     	} else {
       		setShowScore(true);
     	}
@@ -124,8 +133,8 @@ export default function Game1() {
 							<div className='question-text'>{questions[currentQuestion].questionText}</div>
 						</div>
 						<div className='answer-section'>
-							{questions[currentQuestion].answerOptions.map((answerOptions)=><button className="game1btn"onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
-							{answerOptions.answerText}
+							{questions[currentQuestion].answerOptions.map((answerOptions)=><button style={{backgroundColor:bgColor}} className="game1btn"onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
+							{answerOptions.answerText})
 							</button>)}
 						</div>
 					</>

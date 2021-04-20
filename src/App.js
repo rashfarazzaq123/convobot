@@ -4,8 +4,17 @@ import './App.css';
 import Login from './components/Login';
 import SubmitBtn from './components/SubmitBtn';
 import Home from './components/Home';
+import Scenarios from './components/Scenarios'
+import Chatbot from './components/Chatbot';
+import Games from './components/Games';
+import Game1 from './components/Game1';
+import Game2 from './components/Game2';
+import Game3 from './components/Game3';
+import About from './components/About';
+import Contact from './components/Contact';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Users from './store/Users';
+import {Redirect} from 'react-router-dom';
 
 class App extends React.Component{
   
@@ -72,16 +81,15 @@ class App extends React.Component{
             <div className="load">
               Welcome {Users.username}
               <SubmitBtn
-                style={{float:'right'}}
-                id="logout"
                 text={'Log Out'}
                 disabled={false}
                 onClick={()=>this.doLogout()}
               />
-              <div><Home/></div>
             </div>
-          </div>       
-        )   
+          </div>
+          
+          
+        )
       }
     return(
       <div className="App">
@@ -89,7 +97,17 @@ class App extends React.Component{
             <Router>
               <div className="App">
                 <Switch>
-                  <Route exact path="/" component={Login}/>
+               
+                  <Route path="/home" component={Home}/>
+                  <Route path="/scenarios" component={Scenarios}/>
+                  <Route path="/chatbot" component={Chatbot}/>
+                  <Route path="/games" component={Games}/>
+                  <Route path="/game1" component={Game1}/>
+                  <Route path="/game2" component={Game2}/>
+                  <Route path="/game3" component={Game3}/>
+                  <Route path="/about" component={About}/>
+                  <Route path="/contact" component={Contact}/>
+
                 </Switch>
               </div>
             </Router>
