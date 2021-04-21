@@ -100,7 +100,7 @@ li:hover{
   top:100%;
 }
 .wrapper{ 
-  width: 650px; 
+  width: 750px; 
   padding:20px;
   margin-left:10%;
   margin-bottom: 4%;
@@ -139,6 +139,7 @@ li:hover{
   grid-row: 1;
   margin-right: 80%;
   border-radius: 20%;
+  
 }
 .btnsend:hover{
   background-color: #008CBA; 
@@ -313,6 +314,30 @@ li:hover{
   color: #042923;
   background-color: #08bcbf;
   border: #042923;
+}
+#micbtn{
+  grid-row: 1;
+  position: absolute;
+  left:88%;
+  top:86.5%;
+  border: #1074e6;
+}
+#micbtn:focus{
+  border: #2fdf2f solid 4px;
+}
+#micbtn:hover{
+  background-color:#2fdf2f;
+}
+#delbtn{
+  grid-row: 1;
+  position: absolute;
+  left:91.3%;
+  top:86.4%;
+ 
+
+}
+#delbtn:hover{
+  background-color:#d12121;
 }
 .game1btn {
   width: 100%;
