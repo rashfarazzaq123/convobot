@@ -26,7 +26,7 @@ class Scenarios extends React.Component{
         <div className="Scenario" style={{backgroundImage:'url(/directions.jpg)',position:"absolute",top:"255%",left:"7%"}}>
         <Link to='/chatbot3'>
           <img src="robo1.gif" width="420" height="280"/>
-          <p className="scenarioName">Ask Directions</p>
+          <p className="scenarioName">Asking for Directions</p>
           </Link>
         </div>
         <Footer/>
