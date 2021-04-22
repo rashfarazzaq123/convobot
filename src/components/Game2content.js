@@ -130,21 +130,21 @@ export default function Game2() {
         <h5 style={{color:"#92a3ad",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"208%",left:"44%"}}>Enjoy the game!</h5>
 		</div>
 		</div>
-		<div className='game1content'>
+		<div className='game1content' style={{color:"#02385c"}}>
 				
 				{showScore ? (
-					<div className='score-section'>You scored {score} out of {questions.length}</div>
+					<div className='score-section' style={{color:"#02385c"}}>You scored {score} out of {questions.length}</div>
 				) : (
 					<>
-						<div className='question-section'>
-							<div className='question-count'>
-								<span>Question {currentQuestion+1}</span>/{questions.length}
+						<div className='question-section'style={{color:"#02385c"}}>
+							<div className='question-count'style={{color:"#02385c"}}>
+								<span style={{color:"#02385c"}}>Question {currentQuestion+1}</span>/{questions.length}
 							</div>
-							<div className='question-text'>{questions[currentQuestion].questionText}</div>
+							<div className='question-text'style={{color:"#02385c"}}>{questions[currentQuestion].questionText}</div>
 						</div>
-						<div className='answer-section'>
+						<div className='answer-section'style={{color:"#02385c"}}>
 							{questions[currentQuestion].answerOptions.map((answerOptions)=><button style={{backgroundColor:bgColor}} className="game1btn"onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
-							{answerOptions.answerText})
+							{answerOptions.answerText}
 							</button>)}
 						</div>
 					</>

@@ -139,14 +139,14 @@ export default function Game1() {
 				) : (
 					<>
 						<div className='question-section'>
-							<div className='question-count'>
-								<span>Question {currentQuestion+1}</span>/{questions.length}
+							<div className='question-count' style={{color:"#02385c"}}>
+								<span  style={{color:"#02385c"}} >Question {currentQuestion+1}</span>/{questions.length}
 							</div>
-							<div className='question-text'>{questions[currentQuestion].questionText}</div>
+							<div className='question-text'  style={{color:"#02385c"}}>{questions[currentQuestion].questionText}</div>
 						</div>
-						<div className='answer-section'>
+						<div className='answer-section' style={{color:"#02385c"}}>
 							{questions[currentQuestion].answerOptions.map((answerOptions)=><button style={{backgroundColor:bgColor}} className="game1btn"onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
-							{answerOptions.answerText})
+							{answerOptions.answerText}
 							</button>)}
 						</div>
 					</>
