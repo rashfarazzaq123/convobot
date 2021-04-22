@@ -2,11 +2,6 @@ import React from 'react';
 import InputField from './InputField';
 import SubmitBtn from './SubmitBtn';
 import Users from '../store/Users';
-import Home from './Home';
-import { withRouter } from 'react-router';
-import{Router}from 'react-router-dom'
-import {BrowserRouter as Route} from 'react-router-dom';
-
 
 class Login extends React.Component{
     constructor(props){
