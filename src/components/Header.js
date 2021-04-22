@@ -8,8 +8,8 @@ class Header extends React.Component {
     }
     render(){
       return (
-        <div className="Nav" >
-            <img src="convologo.png"  width="340" height="300" alt=""></img>
+        <div className="Nav" style={{backgroundColor:"#52a7d1"}} >
+            <img src="logo1.png"  width="340" height="300" alt=""></img>
             <ul >
                 <Link to='/home'>
                   <li >Home</li>

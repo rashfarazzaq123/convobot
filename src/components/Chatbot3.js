@@ -8,8 +8,12 @@ class Chatbot3 extends React.Component{
       return(
       <div className="Chatbot3">
         <Header/>
-        <div className="scenarioIntro">
-          Scenario:
+        <div className="uni" >
+          
+          <img src="12.jpg" width ="500px" height="320px" style={{position:"absolute",top:"90%",left:"32%"}} />
+          </div>
+        <div className="scenarioIntro4"  style={{position:"absolute",top:"70%",left:"32%"}}>
+          It's your turn to ask direction from Convo
         </div>
         <Message3/>
         <Footer/>

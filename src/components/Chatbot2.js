@@ -8,7 +8,11 @@ class Chatbot2 extends React.Component{
       return(
       <div className="Chatbot2">
         <Header/>
-        <div className="scenarioIntro">
+        <div className="uni" >
+          
+          <img src="5.jpg" width ="500px" height="300px" style={{position:"absolute",top:"100%",left:"32%"}} />
+          </div>
+        <div className="scenarioIntro1" >
           Scenario: You met a new friend at your college. Introduce yourself, ask about his/her whereabouts (school/college year/major/extracurricular activities) and decide on a place to meetup later.. begain the conversation with a hello
         </div>
         <Message2/>

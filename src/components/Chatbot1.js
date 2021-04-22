@@ -8,8 +8,12 @@ class Chatbot1 extends React.Component{
       return(
       <div className="Chatbot1">
         <Header/>
-        <div className="scenarioIntro">
-          Scenario:It's your turn to make an order at the coffee shop.Try asking about the menu!
+        <div className="cafe" >
+          
+          <img src="2.jpg" width ="500px" height="250px" style={{position:"absolute",top:"100%",left:"32%"}} />
+          </div>
+        <div className="scenarioIntro"style={{fontFamily:"Arial, Helvetica, sans-serif"}}>
+          It's your turn to make an order at the coffee shop.Try asking about the menu!
     
         </div>
         <Message1/>

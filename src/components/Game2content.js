@@ -118,26 +118,38 @@ export default function Game2() {
     };
 	return (
 		<div>
-            <div className="game1intro">Select the definition that best describes the word given.</div>
-			<div className='game1content'>
-			{showScore ? (
-				<div className='score-section'>You scored {score} out of {questions.length}</div>
-			) : (
-				<>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question {currentQuestion+1}</span>/{questions.length}
+            	<div className="game1intro" style={{color:"#1891c4",padding:"20px",fontSize:"60px",fontFamily:"Arial, Helvetica, sans-serif"}}>
+				Hello! Welcome to convo Vocublarry game  </div>
+				<img src="13.jpg" width="1100px" height="450px" float="center"  style={{position:"absolute",top:"98%",left:"11%"}}/>
+	<div className="box" style={{backgroundColor:"#1891c4"}}>
+	<div className="introduction" >
+		<h1 style={{color:"#1891c4",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"35px",position:"absolute",top:"171%",left:"44%"}}>How to play?</h1>
+		<h2 style={{color:"#92a3ad",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"183%",left:"6%"}}>Here are some grammar questions for you.First five questions are made with simple grammar and the last<br></br> five questions are there with more advance grammar  .</h2>
+		<h3 style={{color:"#92a3ad",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"194%",left:"6%"}}>If you click the correct answer the box will turn green  .If you select the wrong answer it turn red colour.</h3>	
+		<h4 style={{color:"#92a3ad",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"202%",left:"6%"}}>Finaly the game display your marks you got from here </h4>	
+        <h5 style={{color:"#92a3ad",fontFamily:"Arial, Helvetica, sans-serif",fontSize:"25px",position:"absolute",top:"208%",left:"44%"}}>Enjoy the game!</h5>
+		</div>
+		</div>
+		<div className='game1content'>
+				
+				{showScore ? (
+					<div className='score-section'>You scored {score} out of {questions.length}</div>
+				) : (
+					<>
+						<div className='question-section'>
+							<div className='question-count'>
+								<span>Question {currentQuestion+1}</span>/{questions.length}
+							</div>
+							<div className='question-text'>{questions[currentQuestion].questionText}</div>
 						</div>
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
-					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOptions)=><button style={{backgroundColor:bgColor}} onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
-              {answerOptions.answerText}
-            </button>)}
-					</div>
-				</>
-			)}
-            </div>
+						<div className='answer-section'>
+							{questions[currentQuestion].answerOptions.map((answerOptions)=><button style={{backgroundColor:bgColor}} className="game1btn"onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>
+							{answerOptions.answerText})
+							</button>)}
+						</div>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }

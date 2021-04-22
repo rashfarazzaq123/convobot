@@ -107,13 +107,22 @@ class Message1 extends React.Component{
     }
     render(){
         return(
-            <div className="Message"> 
+            <div className="Message" > 
+            
+            <h1 style={{fontSize:"30px",position:"absolute",top:"150%",left:"10%",color:"#4287f5"}}>Instructions</h1>
+            <h2 style={{fontSize:"20px",position:"absolute",top:"183%",left:"10%",color:"#64799c"}}>Click on the microphone button and wait for the red dot to stop blinking at the top of the page tab.</h2>
+            <h3 style={{fontSize:"20px",position:"absolute",top:"161%",left:"10%",color:"#64799c"}}>Speak to the microphone and click the microphone button again to stop listening.</h3> 
+            <h4 style={{fontSize:"20px",position:"absolute",top:"169%",left:"10%",color:"#64799c"}}>Press the send button after the required input is obtained in the input box.</h4> 
+            <h5 style={{fontSize:"20px",position:"absolute",top:"175%",left:"10%",color:"#64799c"}}>If not click the bin icon to delete the input. You can also enter your inputs through the keyboard.</h5> 
+            <h6 style={{fontSize:"20px",position:"absolute",top:"180%",left:"10%",color:"#64799c"}}>If your voice input is not shown in the input box double click the microphone button.</h6> 
+
                 <div className="wrapper" style={{backgroundImage:'url(/cafe.jpg)'}}>
                     <div className="conversation">
                     <div>{
                         this.state.chat.map((message)=>{
                             if(message.from=='convo'){
-                                
+                         
+                 
                                 return <div id="convo_reply" style={{float:'right',marginTop:'4%',marginLeft:'20%',display:'block',fontSize:'14px',backgroundColor:'#79acce',padding:'10px',borderRadius:'10%'}}>{message.reply}<br/></div>
                                 
                             }
@@ -126,11 +135,11 @@ class Message1 extends React.Component{
                     </div>
                     <div className="textarea">
                     <button id="micbtn" style={{backgroundImage:'url(/mic.png)',borderRadius:'100%',width:"30px",height:"30px",backgroundSize:'cover',backgroundPosition:'center',margin:'5px'}} onClick={this.toggleListen}/>
-                        <input type="text" id="myText" name="message" placeholder="Say something"
+                        <input type="text" id="myText" name="message" placeholder="Say something" style={{width:"300px" ,position:"absolute",top:"89%",left:"13%"}}
                         onChange={(e)=>this.handleInput(e)}
                         className="form-control"
                         value={this.state.finalTranscript||this.state.message}/>  
-                        <button style={{backgroundImage:'url(/send.png)',borderRadius:'100%',width:"33px",height:"33px",backgroundSize:'cover',backgroundPosition:'center',margin:'5px'}}  onClick={()=>this.handleSend()} className="btnsend"></button>  
+                        <button style={{backgroundImage:'url(/send.png)',borderRadius:'100%',width:"33px",height:"33px",backgroundSize:'cover',backgroundPosition:'center',margin:'5px',position:"absolute",top:"88.5%",left:"54%"}}  onClick={()=>this.handleSend()} className="btnsend"></button>  
                         <button id="delbtn"style={{backgroundImage:'url(/delete.png)',width:"33px",height:"33px",backgroundSize:'cover',backgroundPosition:'center',margin:'5px',borderRadius:"16px"}} onClick={()=>this.delete()}></button>
                     </div>
                 </div>
