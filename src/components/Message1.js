@@ -109,8 +109,8 @@ class Message1 extends React.Component{
         return(
             <div className="Message" > 
             
-            <h1 style={{fontSize:"30px",position:"absolute",top:"150%",left:"10%",color:"#4287f5"}}>Instructions</h1>
-            <h2 style={{fontSize:"20px",position:"absolute",top:"183%",left:"10%",color:"#64799c"}}>Click on the microphone button and wait for the red dot to stop blinking at the top of the page tab.</h2>
+            <h1 style={{fontSize:"30px",position:"absolute",top:"147%",left:"10%",color:"#4287f5"}}>Instructions</h1>
+            <h2 style={{fontSize:"20px",position:"absolute",top:"156%",left:"10%",color:"#64799c"}}>Click on the microphone button and wait for the red dot to stop blinking at the top of the page tab.</h2>
             <h3 style={{fontSize:"20px",position:"absolute",top:"161%",left:"10%",color:"#64799c"}}>Speak to the microphone and click the microphone button again to stop listening.</h3> 
             <h4 style={{fontSize:"20px",position:"absolute",top:"169%",left:"10%",color:"#64799c"}}>Press the send button after the required input is obtained in the input box.</h4> 
             <h5 style={{fontSize:"20px",position:"absolute",top:"175%",left:"10%",color:"#64799c"}}>If not click the bin icon to delete the input. You can also enter your inputs through the keyboard.</h5> 
